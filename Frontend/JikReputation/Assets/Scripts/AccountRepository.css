@@ -1,0 +1,5 @@
+interface AccountRepository 
+{
+  void register(Account account);
+  JwtToken login(Account account)
+}
