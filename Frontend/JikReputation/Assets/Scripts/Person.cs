@@ -13,4 +13,8 @@ public class Person
         _description = description;
         _contact = contacnt;
     }
+    public bool HasContact()
+    {
+        return !string.IsNullOrEmpty(_contact);
+    }
 }

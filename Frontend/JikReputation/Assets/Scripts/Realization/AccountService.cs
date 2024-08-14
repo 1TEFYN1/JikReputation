@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 public class AccountService : MonoBehaviour
 {
+    [SerializeField] private GameObject _mainMenuUI;
+    [SerializeField] private Text _userName;
+
     [SerializeField] private Text _nickname;
     [SerializeField] private Text _password;
 
@@ -19,6 +22,8 @@ public class AccountService : MonoBehaviour
             Account account = new Account(_nickname.text, _password.text);
             _accountRepository.Register(account);
             Debug.Log($"New Account \n Nickname{_nickname.text} Password{_password.text}");
+
+            GoToMainMenu();
         }
     }
     public void LogIn()
@@ -40,5 +45,11 @@ public class AccountService : MonoBehaviour
     private bool IsValidPassword(string password)
     {
         return password != null && password.Length >= PASSWORD_LENGTH;
+    }
+    private void GoToMainMenu()
+    {
+        _userName.text = _nickname.text;
+        gameObject.SetActive(false);
+        _mainMenuUI.SetActive(true);
     }
 }

@@ -2414,6 +2414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d75f4b86a6f2b4298e849af2ba5a53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _mainMenuUI: {fileID: 0}
+  _userName: {fileID: 0}
   _nickname: {fileID: 117917467}
   _password: {fileID: 480786944}
 --- !u!1 &582363511
@@ -3911,7 +3913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1188791522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3973,7 +3975,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1188791525
 RectTransform:
@@ -4007,6 +4009,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d75f4b86a6f2b4298e849af2ba5a53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _mainMenuUI: {fileID: 587026146}
+  _userName: {fileID: 418966470}
   _nickname: {fileID: 1546838}
   _password: {fileID: 182405822}
 --- !u!1 &1208804699
@@ -4533,10 +4537,10 @@ RectTransform:
   - {fileID: 1230064785}
   m_Father: {fileID: 323109529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 270, y: -72.825}
+  m_SizeDelta: {x: 540, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1354017196
 GameObject:
@@ -5155,7 +5159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1475441786
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5190,10 +5194,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2279cfc93f4877d48bb7d7fdc5c18529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _mainMenuUI: {fileID: 587026146}
   _name: {fileID: 160410786}
   _age: {fileID: 181826602}
   _description: {fileID: 41755630}
   _contact: {fileID: 258615457}
+  _scoreText: {fileID: 1888531438}
 --- !u!1 &1534367766
 GameObject:
   m_ObjectHideFlags: 0
@@ -5226,10 +5232,10 @@ RectTransform:
   - {fileID: 1306756367}
   m_Father: {fileID: 323109529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 270, y: -377.175}
+  m_SizeDelta: {x: 540, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1557489716
 GameObject:
@@ -5476,10 +5482,10 @@ RectTransform:
   - {fileID: 1978833652}
   m_Father: {fileID: 323109529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 270, y: -275.725}
+  m_SizeDelta: {x: 540, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1646779113
 GameObject:
@@ -6298,10 +6304,10 @@ RectTransform:
   - {fileID: 690627843}
   m_Father: {fileID: 323109529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 270, y: -174.275}
+  m_SizeDelta: {x: 540, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1888531434
 GameObject:
@@ -6708,7 +6714,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1936085046}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 401106580}
+        m_TargetAssemblyTypeName: ButtonsMainMenuController, Assembly-CSharp
+        m_MethodName: AddGirl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1936085046
 MonoBehaviour:
   m_ObjectHideFlags: 0

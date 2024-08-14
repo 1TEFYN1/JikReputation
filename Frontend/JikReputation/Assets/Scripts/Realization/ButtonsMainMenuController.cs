@@ -10,6 +10,7 @@ public class ButtonsMainMenuController : MonoBehaviour
     public void AddGirl()
     {
         _addingGirlsUI.SetActive(true);
+        _mainMenuUI.SetActive(false);
     }
     public void Statistics()
     {

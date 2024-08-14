@@ -3,12 +3,17 @@ using UnityEngine.UI;
 
 public class GirlsController : MonoBehaviour
 {
+    [SerializeField] private GameObject _mainMenuUI;
+
     [SerializeField] private Text _name;
     [SerializeField] private Text _age;
     [SerializeField] private Text _description;
     [SerializeField] private Text _contact;
+    [SerializeField] private Text _scoreText;
 
-    DatingRepository _repository;
+    private int _score;
+
+    DatingRepository _repository = new TestDatingRepository(new JwtToken(""));
 
     public void Add()
     {
@@ -18,11 +23,13 @@ public class GirlsController : MonoBehaviour
             int.TryParse(_age.text, out age);
 
             Person person = new Person(_name.text, age, _description.text, _contact.text);
-            _repository.Keep(person);
+            _score += _repository.Keep(person);
+            _scoreText.text = _score.ToString();
 
             Debug.Log($"{_name.text} \n {_age.text} \n {_description.text} \n {_contact.text}");
 
             ClearFields();
+            BackMenu();
         }
         else
         {
@@ -56,5 +63,10 @@ public class GirlsController : MonoBehaviour
         _age.text = null;
         _description.text = null;
         _contact.text = null;
+    }
+    private void BackMenu()
+    {
+        gameObject.SetActive(false);
+        _mainMenuUI.SetActive(true);
     }
 }

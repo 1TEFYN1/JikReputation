@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Iam.cs" />
     <Compile Include="Assets\Scripts\Realization\AccountService.cs" />
     <Compile Include="Assets\Scripts\JwtAuthorizationRepositry.cs" />
+    <Compile Include="Assets\Scripts\TestRealization\TestDatingRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
