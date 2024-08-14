@@ -60,7 +60,11 @@
     <Analyzer Include="D:\Unity\2022.3.29f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Rival.cs" />
     <Compile Include="Assets\Scripts\Account.cs" />
+    <Compile Include="Assets\Scripts\LevelOfAcquaintance.cs" />
+    <Compile Include="Assets\Scripts\DatingRepository.cs" />
+    <Compile Include="Assets\Scripts\RivalPerson.cs" />
     <Compile Include="Assets\Scripts\JwtToken.cs" />
     <Compile Include="Assets\Scripts\Person.cs" />
     <Compile Include="Assets\Scripts\AccountRepository.cs" />

@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System;
+
 public class Rival
 {
   private readonly string _nickname;

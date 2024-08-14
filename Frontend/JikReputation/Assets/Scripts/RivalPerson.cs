@@ -1,6 +1,6 @@
 public class RivalPerson
 {
-  private readonly _name;
+  private readonly string _name;
 
   public RivalPerson(string name)
   {
