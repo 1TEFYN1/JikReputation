@@ -1,0 +1,9 @@
+public class JwtToken
+{
+  private const string _value { get; set; };
+
+  public JwtToken (string value)
+  {
+    _value = value;
+  }
+}
