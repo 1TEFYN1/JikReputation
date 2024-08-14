@@ -9,12 +9,12 @@ public class Rival
   private readonly DateTime _dateOfRegistration;
   private readonly int _mutualPersons;
 
-  public Rival(string nickname, List<RivalPerson> persons, LevelOfAcquaintance level, DateTime dateOfRegistration, int mutualPresons)
+  public Rival(string nickname, List<RivalPerson> persons, LevelOfAcquaintance level, DateTime dateOfRegistration, int mutualPersons)
   {
     _nickname = nickname;
     _persons = persons;
     _level = level;
     _dateOfRegistration = dateOfRegistration;
-    _mutualPresons = mutualPresons;
+    _mutualPersons = mutualPersons;
   }
 }

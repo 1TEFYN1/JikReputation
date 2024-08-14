@@ -1,7 +1,7 @@
 public class Account
 {
-    private string _nickname { get; set; }
-    private string _password { get; set; }
+    private string _nickname;
+    private string _password;
 
     public Account(string nickname, string password)
     {

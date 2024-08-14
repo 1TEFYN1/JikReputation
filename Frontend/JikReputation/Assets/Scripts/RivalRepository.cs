@@ -1,4 +1,8 @@
-abstract class RivalRepository : JwtAuthorizationRepositry
+using System.Collections.Generic;
+
+public abstract class RivalRepository : JwtAuthorizationRepository
 {
-  abstract List<Rival> FetchAll();
+    public RivalRepository(JwtToken requestJwtToken)
+        : base(requestJwtToken) { }
+    public abstract List<Rival> FetchAll();
 }
