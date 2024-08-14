@@ -1,13 +1,7 @@
-abstract class DatingRepository
+abstract class DatingRepository : JwtAuthorizationRepository
 {
-  private readonly JwtToken _requestJwtToken;
-
-  public DatingRepository(JwtToken requestJwtToken)
-  {
-    _requestJwtToken = requestJwtToken;
-  }
-  
-  public abstract int keep(Person person);
-  public abstract void drop(int id);
-  public abstract void edit(Person person);
+  public abstract int Keep(Person person);
+  public abstract void Drop(int id);
+  public abstract void Edit(Person person);
+  public abstract List<Person> FetchAll();
 }
