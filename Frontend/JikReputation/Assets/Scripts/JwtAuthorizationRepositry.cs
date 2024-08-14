@@ -1,4 +1,4 @@
-class JwtAuthorizationRepositry
+class JwtAuthorizationRepository
 {
   protected readonly JwtToken _requestJwtToken;
 
