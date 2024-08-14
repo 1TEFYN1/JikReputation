@@ -8,14 +8,21 @@ public class GirlsController : MonoBehaviour
     [SerializeField] private Text _description;
     [SerializeField] private Text _contact;
 
+    DatingRepository _repository;
+
     public void Add()
     {
         if (IsValidGirlInfo(_name.text, _age.text, _description.text))
         {
             int age;
             int.TryParse(_age.text, out age);
+
             Person person = new Person(_name.text, age, _description.text, _contact.text);
+            _repository.Keep(person);
+
             Debug.Log($"{_name.text} \n {_age.text} \n {_description.text} \n {_contact.text}");
+
+            ClearFields();
         }
         else
         {
@@ -41,5 +48,13 @@ public class GirlsController : MonoBehaviour
     private bool IsValidDescription(string description)
     {
         return !string.IsNullOrEmpty(description);
+    }
+    
+    private void ClearFields()
+    {
+        _name.text = null;
+        _age.text = null;
+        _description.text = null;
+        _contact.text = null;
     }
 }
