@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Person : MonoBehaviour
 {
+    private int _id { get; set; }
     private string _name { get; set; }
     private int _age { get; set; }
     private string _description { get; set; }
