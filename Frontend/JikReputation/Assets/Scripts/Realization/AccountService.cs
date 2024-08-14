@@ -10,6 +10,7 @@ public class AccountService : MonoBehaviour
     private const int PASSWORD_LENGTH = 8;
 
     private AccountRepository _accountRepository = new TestAccountRepository();
+    public Iam Iam { get; set; }
 
     public void SignUp()
     {
@@ -25,7 +26,7 @@ public class AccountService : MonoBehaviour
         if (IsValidAccount(_nickname.text, _password.text))
         {
             Account account = new Account(_nickname.text, _password.text);
-            _accountRepository.Login(account);
+            Iam = _accountRepository.Login(account);
         }
     }
     private bool IsValidAccount(string nickname, string password)

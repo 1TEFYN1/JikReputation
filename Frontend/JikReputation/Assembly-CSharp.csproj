@@ -61,10 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Rival.cs" />
-    <Compile Include="Assets\Scripts\AccountService.cs" />
     <Compile Include="Assets\Scripts\Account.cs" />
+    <Compile Include="Assets\Scripts\Realization\ButtonsMainMenuController.cs" />
     <Compile Include="Assets\Scripts\LevelOfAcquaintance.cs" />
     <Compile Include="Assets\Scripts\DatingRepository.cs" />
+    <Compile Include="Assets\Scripts\Realization\GirlsController.cs" />
     <Compile Include="Assets\Scripts\TestRealization\TestAccountRepository.cs" />
     <Compile Include="Assets\Scripts\RivalPerson.cs" />
     <Compile Include="Assets\Scripts\RivalRepository.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\Scripts\Person.cs" />
     <Compile Include="Assets\Scripts\AccountRepository.cs" />
     <Compile Include="Assets\Scripts\Iam.cs" />
+    <Compile Include="Assets\Scripts\Realization\AccountService.cs" />
     <Compile Include="Assets\Scripts\JwtAuthorizationRepositry.cs" />
   </ItemGroup>
   <ItemGroup>

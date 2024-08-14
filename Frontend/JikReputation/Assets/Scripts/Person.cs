@@ -1,6 +1,4 @@
-using UnityEngine;
-
-public class Person : MonoBehaviour
+public class Person
 {
     private int _id { get; set; }
     private string _name { get; set; }
