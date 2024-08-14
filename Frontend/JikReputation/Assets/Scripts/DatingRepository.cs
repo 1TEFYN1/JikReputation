@@ -7,7 +7,7 @@ abstract class DatingRepository
     _requestJwtToken = requestJwtToken;
   }
   
-  public abstract void keep(Person person);
+  public abstract int keep(Person person);
   public abstract void drop(int id);
   public abstract void edit(Person person);
 }
