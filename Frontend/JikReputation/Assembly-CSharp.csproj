@@ -65,9 +65,12 @@
     <Compile Include="Assets\Scripts\LevelOfAcquaintance.cs" />
     <Compile Include="Assets\Scripts\DatingRepository.cs" />
     <Compile Include="Assets\Scripts\RivalPerson.cs" />
+    <Compile Include="Assets\Scripts\RivalRepository.cs" />
     <Compile Include="Assets\Scripts\JwtToken.cs" />
     <Compile Include="Assets\Scripts\Person.cs" />
     <Compile Include="Assets\Scripts\AccountRepository.cs" />
+    <Compile Include="Assets\Scripts\Iam.cs" />
+    <Compile Include="Assets\Scripts\JwtAuthorizationRepositry.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
