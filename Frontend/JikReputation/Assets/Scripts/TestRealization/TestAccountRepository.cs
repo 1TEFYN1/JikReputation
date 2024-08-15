@@ -10,8 +10,9 @@ public class TestAccountRepository : AccountRepository
 
         string value = "Test";
         JwtToken jwtToken = new JwtToken(value);
+        int score = 0;
 
-        return new Iam(name, level, persons, jwtToken);
+        return new Iam(name, level, persons, jwtToken, score);
     }
 
     public void Register(Account account)

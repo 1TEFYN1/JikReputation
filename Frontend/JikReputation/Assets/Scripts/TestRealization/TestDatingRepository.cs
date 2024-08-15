@@ -7,9 +7,9 @@ public class TestDatingRepository : DatingRepository
     {
     }
 
-    public override void Drop(int id)
+    public override void Drop(Person person)
     {
-        throw new System.NotImplementedException();
+        _persons.Remove(person);
     }
 
     public override void Edit(Person person)
@@ -19,12 +19,12 @@ public class TestDatingRepository : DatingRepository
 
     public override List<Person> FetchAll()
     {
-        throw new System.NotImplementedException();
+        return _persons;
     }
 
-    public override int Keep(Person person)
+    public override Person Keep(Person person)
     {
         _persons.Add(person);
-        return person.HasContact() ? 5 : 1;
+        return person;
     }
 }

@@ -14,6 +14,7 @@ public class ButtonsMainMenuController : MonoBehaviour
     }
     public void Statistics()
     {
+        _mainMenuUI.SetActive(false);
         _statisticsUI.SetActive(true);
     }
     public void Friends()

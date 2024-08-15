@@ -17,4 +17,8 @@ public class Person
     {
         return !string.IsNullOrEmpty(_contact);
     }
+    public string GetName() { return _name; }
+    public int GetAge() { return _age;}
+    public string GetDescription() { return _description;}
+    public string GetContact() { return _contact;}
 }

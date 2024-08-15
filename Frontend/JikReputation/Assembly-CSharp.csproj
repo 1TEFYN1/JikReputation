@@ -60,21 +60,22 @@
     <Analyzer Include="D:\Unity\2022.3.29f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Rival.cs" />
-    <Compile Include="Assets\Scripts\Account.cs" />
+    <Compile Include="Assets\Scripts\Remote\Repository\Api\RivalPerson.cs" />
+    <Compile Include="Assets\Scripts\Remote\Repository\Api\JwtAuthorizationRepositry.cs" />
+    <Compile Include="Assets\Scripts\Remote\Repository\Api\JwtToken.cs" />
+    <Compile Include="Assets\Scripts\Remote\Repository\Api\LevelOfAcquaintance.cs" />
     <Compile Include="Assets\Scripts\Realization\ButtonsMainMenuController.cs" />
-    <Compile Include="Assets\Scripts\LevelOfAcquaintance.cs" />
-    <Compile Include="Assets\Scripts\DatingRepository.cs" />
+    <Compile Include="Assets\Scripts\Remote\Repository\Api\Rival.cs" />
+    <Compile Include="Assets\Scripts\Remote\Repository\Api\Person.cs" />
     <Compile Include="Assets\Scripts\Realization\GirlsController.cs" />
     <Compile Include="Assets\Scripts\TestRealization\TestAccountRepository.cs" />
-    <Compile Include="Assets\Scripts\RivalPerson.cs" />
-    <Compile Include="Assets\Scripts\RivalRepository.cs" />
-    <Compile Include="Assets\Scripts\JwtToken.cs" />
-    <Compile Include="Assets\Scripts\Person.cs" />
-    <Compile Include="Assets\Scripts\AccountRepository.cs" />
-    <Compile Include="Assets\Scripts\Iam.cs" />
+    <Compile Include="Assets\Scripts\Remote\Repository\Api\RivalRepository.cs" />
+    <Compile Include="Assets\Scripts\Remote\Repository\Api\Iam.cs" />
+    <Compile Include="Assets\Scripts\Realization\GirlsStatisticsController.cs" />
+    <Compile Include="Assets\Scripts\Remote\Repository\Api\AccountRepository.cs" />
+    <Compile Include="Assets\Scripts\Remote\Repository\Api\Account.cs" />
+    <Compile Include="Assets\Scripts\Remote\Repository\Api\DatingRepository.cs" />
     <Compile Include="Assets\Scripts\Realization\AccountService.cs" />
-    <Compile Include="Assets\Scripts\JwtAuthorizationRepositry.cs" />
     <Compile Include="Assets\Scripts\TestRealization\TestDatingRepository.cs" />
   </ItemGroup>
   <ItemGroup>
